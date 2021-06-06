@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Work Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-regular.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-regular.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-300.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-300.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-300.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-500.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-500.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-500.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-600.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-600.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-600.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-700.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-700.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-700.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-regular.eot");
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/pt-sans-v11-latin-regular.woff") format("woff"), url("../fonts/PT_Sans/pt-sans-v11-latin-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-700.eot");
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/pt-sans-v11-latin-700.woff") format("woff"), url("../fonts/PT_Sans/pt-sans-v11-latin-700.ttf") format("truetype"); }
+
+/* Размер шрифта будет увеличиваться в зависимости от размера экрана */
+/** Ширина контейнера **/
+/* Заголовок h2 не будет отображаться в блоке section */
+/* как подключить миксин: @include visually-hidden() */
+/*Переводит px в rem  */
+/* font-size: rem(24px);
+   line-height: rem(28px); */
+/*Переводит px в em  */
+/* font-size: em(24px);
+   line-height: em(28px); */
+/* как подключить миксин: @include visually-hidden() */
+/* как подключить миксин: @include visually-hidden() */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff; }
+
+.container {
+  max-width: 1140px;
+  min-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */

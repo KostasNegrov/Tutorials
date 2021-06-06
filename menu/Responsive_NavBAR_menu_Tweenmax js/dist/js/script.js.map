@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["jQuery","document","ready","$"],"mappings":"aAAAA,OAAOC,UAAUC,MAAM,SAAUC","file":"script.js","sourcesContent":["jQuery(document).ready(function ($) {\n\n \n\n});\n\n\n\n"]}
