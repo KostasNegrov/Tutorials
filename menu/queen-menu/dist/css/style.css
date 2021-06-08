@@ -1,0 +1,454 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Work Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-regular.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-regular.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-300.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-300.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-300.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-500.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-500.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-500.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-600.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-600.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-600.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-700.eot");
+  src: url("../fonts/Work_Sans/work-sans-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans/work-sans-v5-latin-700.woff") format("woff"), url("../fonts/Work_Sans/work-sans-v5-latin-700.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-regular.eot");
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/pt-sans-v11-latin-regular.woff") format("woff"), url("../fonts/PT_Sans/pt-sans-v11-latin-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-700.eot");
+  src: url("../fonts/PT_Sans/pt-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/pt-sans-v11-latin-700.woff") format("woff"), url("../fonts/PT_Sans/pt-sans-v11-latin-700.ttf") format("truetype"); }
+
+/* Размер шрифта будет увеличиваться в зависимости от размера экрана */
+/** Ширина контейнера **/
+/* Заголовок h2 не будет отображаться в блоке section */
+/* как подключить миксин: @include visually-hidden() */
+/*Переводит px в rem  */
+/* font-size: rem(24px);
+   line-height: rem(28px); */
+/*Переводит px в em  */
+/* font-size: em(24px);
+   line-height: em(28px); */
+/* как подключить миксин: @include visually-hidden() */
+/* как подключить миксин: @include visually-hidden() */
+.header {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .header .header-logo {
+    width: 150px;
+    height: auto;
+    position: relative;
+    z-index: 1; }
+    .header .header-logo img {
+      width: 100%; }
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-property: opacity, -webkit-filter;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: all 800ms ease;
+  transition: all 800ms ease; }
+
+.hamburger:hover {
+  opacity: 0.7; }
+
+.hamburger.is-active:hover {
+  opacity: 0.7; }
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #000; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease; }
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block; }
+
+.hamburger-inner::before {
+  top: -10px; }
+
+.hamburger-inner::after {
+  bottom: -10px; }
+
+/** spin **/
+.hamburger--spin .hamburger-inner {
+  -webkit-transition-duration: 0.22s;
+          transition-duration: 0.22s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin .hamburger-inner::before {
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+
+.hamburger--spin .hamburger-inner::after {
+  -webkit-transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin.is-active .hamburger-inner {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition-delay: 0.12s;
+          transition-delay: 0.12s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.hamburger--spin.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+
+.hamburger--spin.is-active .hamburger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: bottom 0.1s ease-out, -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  width: 100%; }
+  .content__logo {
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 150px;
+    height: auto; }
+    .content__logo img {
+      width: 100%; }
+  .content__left {
+    -webkit-box-flex: 70%;
+        -ms-flex: 70% 0 0px;
+            flex: 70% 0 0;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: all 800ms ease;
+    transition: all 800ms ease; }
+  .content__right {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30% 0 0px;
+            flex: 30% 0 0;
+    background-color: #f05a5a;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 800ms ease;
+    transition: all 800ms ease;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+    padding-left: 55px;
+    line-height: 32px; }
+    .content__right ul {
+      margin-top: 1em; }
+    .content__right a {
+      color: white;
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease; }
+      .content__right a::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -28px;
+        width: 0px;
+        height: 5px;
+        background-color: #f05a5a;
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease; }
+      .content__right a:hover {
+        text-decoration: underline; }
+  .content__menu {
+    margin-top: 18em;
+    margin-left: 4em; }
+    .content__menu li a {
+      font-size: 2.5em;
+      line-height: 52px;
+      font-weight: 500;
+      color: #1b1b1b;
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+      position: relative; }
+      .content__menu li a::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -28px;
+        width: 0px;
+        height: 5px;
+        background-color: #f05a5a;
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease; }
+      .content__menu li a:hover {
+        color: #f05a5a;
+        margin-left: 0.5em; }
+        .content__menu li a:hover::before {
+          width: 25px;
+          left: -52px; }
+
+.body-menu-opened .content__left {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%); }
+
+.body-menu-opened .content__right {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%); }
+
+.body-menu-opened .hamburger {
+  -webkit-transform: translateX(-570%);
+          transform: translateX(-570%); }
+
+.body-menu-close .content__left {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition-delay: 1200ms;
+          transition-delay: 1200ms; }
+
+.body-menu-close .content__right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-delay: 1200ms;
+          transition-delay: 1200ms; }
+
+.body-menu-close .hamburger {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%); }
+
+.body-menu-opened .delay5 {
+  -webkit-transition: all 500ms ease 500ms;
+  transition: all 500ms ease 500ms; }
+
+.body-menu-opened .delay6 {
+  -webkit-transition: all 600ms ease 600ms;
+  transition: all 600ms ease 600ms; }
+
+.body-menu-opened .delay7 {
+  -webkit-transition: all 700ms ease 700ms;
+  transition: all 700ms ease 700ms; }
+
+.body-menu-opened .delay8 {
+  -webkit-transition: all 800ms ease 800ms;
+  transition: all 800ms ease 800ms; }
+
+.body-menu-opened .delay9 {
+  -webkit-transition: all 900ms ease 900ms;
+  transition: all 900ms ease 900ms; }
+
+.body-menu-opened .delay10 {
+  -webkit-transition: all 1000ms ease 1000ms;
+  transition: all 1000ms ease 1000ms; }
+
+.body-menu-opened .delay11 {
+  -webkit-transition: all 1100ms ease 1100ms;
+  transition: all 1100ms ease 1100ms; }
+
+.body-menu-close .delay5 {
+  -webkit-transition: all 500ms ease 500ms;
+  transition: all 500ms ease 500ms; }
+
+.body-menu-close .delay6 {
+  -webkit-transition: all 600ms ease 600ms;
+  transition: all 600ms ease 600ms; }
+
+.body-menu-close .delay7 {
+  -webkit-transition: all 700ms ease 700ms;
+  transition: all 700ms ease 700ms; }
+
+.body-menu-close .delay8 {
+  -webkit-transition: all 800ms ease 800ms;
+  transition: all 800ms ease 800ms; }
+
+.body-menu-close .delay9 {
+  -webkit-transition: all 900ms ease 900ms;
+  transition: all 900ms ease 900ms; }
+
+.body-menu-close .delay10 {
+  -webkit-transition: all 1000ms ease 1000ms;
+  transition: all 1000ms ease 1000ms; }
+
+.body-menu-close .delay11 {
+  -webkit-transition: all 1100ms ease 1100ms;
+  transition: all 1100ms ease 1100ms; }
+
+.transformLeft {
+  -webkit-transform: translateX(-75px);
+          transform: translateX(-75px);
+  opacity: 0; }
+
+.body-menu-opened .transformLeft {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  opacity: 1; }
+
+.body-menu-close .transformLeft {
+  -webkit-transform: translateX(-75px);
+          transform: translateX(-75px);
+  opacity: 0; }
+
+.transformUp {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  opacity: 0; }
+
+.body-menu-opened .transformUp {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1; }
+
+.body-menu-close .transformUp {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  opacity: 0; }
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url(../images/hero.jpg);
+  background-color: rgba(32, 26, 31, 0.6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  overflow: hidden;
+  position: relative; }
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(32, 26, 31, 0.6);
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+    z-index: -1; }
+
+.body-menu-opened body::before {
+  background-color: rgba(32, 26, 31, 0.9); }
+
+.body-menu-close body::before {
+  background-color: rgba(32, 26, 31, 0.6); }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
